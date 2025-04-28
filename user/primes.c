@@ -71,7 +71,7 @@ int main(int argc, char const *argv[])
   for (int i = 2; i <= 35; ++i) //写入初始数据
     write(p[WR], &i, INT_LEN);
 
-  if (;) {
+  if (fork() == 0) {
     primes(p);
   } else {
     close(p[WR]);
